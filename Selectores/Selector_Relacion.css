@@ -1,0 +1,39 @@
+/* Ejemplos de Selectores de Relacion*/
+
+body { color: blue;}
+p    { font-weight: bold;}
+
+
+/* Para combinar selectores simplemente los unimos*/
+/*---------------------------------------*/
+#par6.clasePar { color:red; }
+
+
+
+/* La coma simplemente agrupa selectores 
+/*---------------------------------------*/
+/* h2, #par3 { color:red; } */
+
+
+
+/* Descendiente (que estén adentro de)*/
+/*------------------------------------*/
+/* #contenedor p { color:red;} */
+
+
+
+/* Hijo Directo (debe ser hijo inmediato)*/
+/*---------------------------------------*/
+/* #contenedor > p { color:red;} */
+
+
+
+/* Hermano Adyacente (debe estar despues de)*/
+/*-----------------------------------------*/
+/* p + div { color:red;} */
+
+
+
+/* Hermano General (No es necesario que este despues de)*/
+/*------------------------------------------------------*/
+/*p ~ div { color:red;}*/

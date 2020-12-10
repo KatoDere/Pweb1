@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>JS Manejador Evento</title>
+    <link rel="stylesheet" href="03_JS_AttributeEventHandler.css">
+</head>
+
+<body>
+    <p id="par1" class="bordeAzul"></p>
+
+    <!-- onclick es un atributo html de evento -->
+    <!-- El objeto window es el punto de entrada a la API de Javascript-->
+    <button onclick="window.alert('Ventana de Alerta')">Alerta</button>
+
+
+
+
+
+
+
+
+    <!-- Como window es el objeto global por defecto podemos prescindir  -->
+    <!-- de la palabra clave window para llamar a su metodos y propiedades -->
+    <button onclick="confirm('Ventana de Confirmación')">Confirmacion</button>
+
+
+
+
+
+
+    <!-- Llamamos una función que hayamos definido dentro de la etiqueta script -->
+    <button onclick="fn_btn_prompt()">Pregunta</button>
+
+
+
+
+
+    <button onclick="fn_btn_CambiaBorde()">Borde ON/OFF</button>
+
+
+
+
+    <script>
+    function fn_btn_prompt() {
+
+        // Con la palabra clave var definimos una variable en Javascript
+        var persona = prompt("Teclee su nombre: ", "Nombre y Apellido Paterno");
+
+        if (persona != null) {
+            // Una de las propiedades mas importates del objeto window
+            // Es la propiedad document
+            // document es un objeto que representa el contenido del navegador
+            // Este objeto tiene metodos, uno de esos metodos es getElementByID
+            var elemento = document.getElementById("par1")
+            elemento.innerHTML = "Buen día " + persona;
+
+            // O podemos simplemente:
+            document.getElementById("par1").innerHTML = "Buen día " + persona;
+        }
+
+    }
+
+    function fn_btn_CambiaBorde() {
+        console.log('cambiaborde');
+        document.getElementById("par1").classList.toggle("bordeAzul");
+    }
+</script>
+
+</body>
+
+</html>
+

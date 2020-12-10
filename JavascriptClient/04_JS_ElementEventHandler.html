@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>JS Manejador Evento</title>
+    <link rel="stylesheet" href="04_JS_ElementEventHandler.css">
+</head>
+<body>
+
+    <!--
+    En JS el documento y sus elementos tienen propiedades para manejar eventos
+    Estas propiedades empiezan con la palabra clave "on"
+    -->
+
+    <label for="nombre">Nombre</label>
+    <input id="nombre" type="text"></input><br>
+    <button id="btn_Enviar">Enviar</button>
+
+    <script>
+    document.getElementById("btn_Enviar").onclick = function() {
+
+        var nom = document.getElementById("nombre").value;
+
+        alert('Enviar '+nom);
+    }
+    </script>
+
+
+<!-- Otra forma de incluir Js es dentro de una URL -->
+<a href="javascript:alert('Esto es una alerta')">Ventana de Alert</a>
+
+</body>
+
+</html>
+

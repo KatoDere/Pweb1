@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="Formulario.css" >
+
+   
+  </head>
+  <body>
+
+    <div id="Formulario">
+    <form name="FormFormulario"  method="POST">     
+      <table border="0">
+        <tr>
+          <td class="CentradoTitulo" colspan="2">Registro de Usuario Globos Confetti</td>
+        </tr>
+
+        <tr>
+          <td class="Descripcion">Usuario:</td>
+          <td class="Valor">
+            <input type="text" name="txtUsuario" placeholder="Usuario"/>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="Descripcion">Contraseña:</td>
+          <td class="Valor">
+            <input type="password" placeholder="Contraseña" />
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="Descripcion">Nombre:</td>
+          <td class="Valor">
+            <input type="text" name="txtNombre"placeholder="Nombre"/>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="Descripcion">Apellido Paterno:</td>
+          <td class="Valor">
+            <input type="text" name="txtApellidoPaterno" placeholder="Apellido Paterno"/>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="Descripcion">Apellido Materno:</td>
+          <td class="Valor">
+            <input type="text" name="txtApellidoMaterno" placeholder="Apellido Materno"/>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="Descripcion">Sexo:</td>
+          <td class="Valor">
+            <input type="radio" name="radSexo" value="M"/>Masculino
+            <input type="radio" name="radSexo" value="F"/>Femenino
+          </td>
+        </tr>
+
+        <tr>
+          <td class="Descripcion">Fecha de Nacimiento</td>
+          <td class="Valor">
+            <input type="date" name="dtmFechaNacimiento"/>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="Descripcion">Ciudad:</td>
+          <td class="Valor">
+            <select name="CboCiudad1">
+              <option value="1">Nuevo Laredo</option>
+              <option value="2">Monterrey</option>
+              <option value="3">Piedras Negras</option>
+              <option value="4">Saltillo</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="Descripcion">Direccion:</td>
+          <td class="Valor">
+            <input type="text" name="txtDireccion" placeholder="Direccion"/>
+          </td>
+        </tr>
+
+        <tr >
+          <td class="Descripcion">Email:</td>
+          <td class="Valor">
+            <input type="text" name="txtEmail" placeholder="Usuario@gmail.com"/>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="Descripcion">Novedades Email:</td>
+          <td class="Valor">
+            <input type="checkbox" name="chboxNovedades" value="1" />
+          </td>
+        </tr>
+
+        <tr>
+          <td class="CentradoTitulo" colspan="2">
+            <input type="submit" name="btnRegistrar" value="Registrar Usuario"/>
+          </td>
+        </tr>
+
+      </table>
+      </form>
+    </div>
+
+  </body>
+</html>

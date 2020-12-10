@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "..\\..\\wamp64\\www\\ProgWeb"
+		}
+	],
+	"settings": {
+		"git.ignoreLimitWarning": true
+	}
+}

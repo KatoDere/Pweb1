@@ -1,0 +1,12 @@
+p + div {
+    color:blue;
+  }
+
+
+/* p + div p {
+  color:blue;
+} */
+
+div p:last-child:first-child {
+    color:blue;
+}

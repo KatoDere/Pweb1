@@ -1,0 +1,17 @@
+#contenedor {
+    width: 500px;
+    margin-left: 20px;
+    margin-top: 10px;
+    background-color: lightgray;
+    border: 1px solid #CCC;
+    padding: 10px 0 10px 0;
+}
+
+#contenedor form label {
+    width: 120px;
+    float: left;
+    font-family: verdana;
+    font-size: 14px;
+}
+
+

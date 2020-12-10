@@ -1,0 +1,19 @@
+/* Ejemplos de Selectores Pseudoelemento*/
+
+/* Pseudoelemento: Son claves añadidas al selector
+   para referirse solamente a una parte especifica
+   del elemento(s) selecionado(s)
+*/
+
+body { color: blue;}
+p    { font-weight: bold;}
+
+
+#contenedor1 p::first-line {color:red; }
+
+#contenedor2 p::first-letter {color:green; }
+
+#contenedor2::before { content: "BEFORE #contenedor2"; }
+#contenedor2 p::before { content: "BEFORE #contenedor2 p"; }
+
+#contenedor2 p::after { content: "AFTER"; }

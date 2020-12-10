@@ -1,0 +1,5 @@
+/* .contenedor > .elem  { color: blue; } */
+
+/* .contenedor > p.elem  { color: blue; } */
+
+.contenedor > p  { color: blue; }

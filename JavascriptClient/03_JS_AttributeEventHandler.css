@@ -1,0 +1,13 @@
+
+#par1 {
+    width:50%;
+    height: 100px;
+}
+
+.bordeAzul {
+    border: 2px solid blue;
+}
+
+.bordeRojo {
+    border: 2px solid red;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8>"
+	<title>Switch</title>
+</head>
+
+<body>
+	<script type="text/javascript">
+		document.write('<h3>Ejemplo 1 de Switch</h3><br>');
+		var numero;
+		var color;
+
+		numero = prompt('Teclee un valor del 1 al 5 : ', '');
+		numero = parseInt(numero);
+		document.write('<br><br>');
+		switch (numero) {
+			case 1:
+				document.write('Tecleaste Uno');
+				break;
+			case 2:
+				document.write('Tecleaste Dos');
+				break;
+			case 3:
+				document.write('Tecleaste Tres');
+				break;
+			case 4:
+				document.write('Tecleaste Cuatro');
+				break;
+			case 5:
+				document.write('Tecleaste Cinco');
+				break;
+			default:
+				document.write('Valor Invalido');
+				break;
+		}
+
+		document.write('<h3>Ejemplo 2 de Switch</h3><br>');
+		color = prompt('Teclee el color para el fondo (rojo,verde,azul) : ', '');
+		switch (color) {
+			case 'rojo':
+				document.bgColor = '#ff0000';
+				break;
+			case 'verde':
+				document.bgColor = '#00ff00';
+				break;
+			case 'azul':
+				document.bgColor = '#0000ff';
+				break;
+		}
+	</script>
+
+</body>
+
+</html?

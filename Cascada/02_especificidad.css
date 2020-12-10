@@ -1,0 +1,37 @@
+body { font-weight: bold;
+       font-size: 22px; }
+
+p { color:red;}
+
+#par1 { color: blue; }
+
+.parrafo { color: green; }
+
+
+/*
+PRIMER CRITERIO "de desempate" LA IMPORTANCIA
+El orden en que se leen los estilos
+
+p { color:red;}
+#par1 { color: blue; }
+.parrafo { color: green; }
+p { color:blueviolet; }
+*/
+
+
+/* SEGUNDO CRITERIO "de desempate" LA ESPECIFICIDAD
+Revisar "el peso" de los selectores y ganará el mas pesado
+
+p { color:red;}                     1
+p { color:blueviolet; }             1
+.parrafo { color: green; }         10
+#par1 { color: blue; }            100
+*/
+
+
+/* TERCER CRITERIO "de desempate" ORDEN
+
+Si la especifidad no resuelve el desempate
+Se revisa el orden de las declaraciones
+y ganará el último selector declarado
+*/

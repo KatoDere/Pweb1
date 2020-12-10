@@ -1,0 +1,47 @@
+<html>
+
+<head>
+<title>Ejemplo de Objeto Window</title>
+</head>
+
+<body>
+	<script type="text/javascript">
+	function abrir()
+	{
+	var ventana=open();
+	ventana.document.write("Primera Linea de la nueva ventana<br>");
+	ventana.document.write("Segunda Linea");
+	}
+	function abrirParametros()
+	{
+	var ventana=open('','','status=yes,width=400,height=250,menubar=yes');
+	ventana.document.write("");
+	}
+	function mostrarAlerta()
+	{
+	alert("Esta es una ventana de alerta");
+	}
+	function confirmar()
+	{  
+	var respuesta=prompt("Presione alguno de los botones");
+	if (respuesta==true) alert("Presiono que SI");
+			  else alert("Presiono que NO");
+	}
+	function cargarCadena()
+	{
+	var cadena=prompt("Teclee una cadena :");
+	alert("Usted ingreso la cadena : "+cadena);
+	}
+	</script>
+	
+	<form>
+	<br><br>
+	<input type="button" value="open" onClick="abrir()"><br>
+	<input type="button" value="open parameters" onClick="abrirParametros()"><br>
+	<input type="button" value="alert" onClick="mostrarAlerta()"><br>
+    <input type="button" value="confirm" onClick="confirmar()"><br>
+	<input type="button" value="prompt" onClick="cargarCadena()"><br>
+	</form>
+</body>
+
+</html>

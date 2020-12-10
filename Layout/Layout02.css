@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+  border-style: solid;
+  border-width: 2px;
+  border-color: blue;
+}
+
+nav {
+  border-style: solid;
+  border-width: 2px;
+  border-color: red;
+}
+
+main {
+  border-style: solid;
+  border-width: 5px;
+  border-color: yellow;
+  background-color: blanchedalmond;
+}
+
+aside {
+  border-style: solid;
+  border-width: 5px;
+  border-color: green;
+}
+
+
+
+body {
+    padding-left: 200px;
+    padding-right: 190px;
+    min-width: 240px;
+}
+
+header, footer {
+    margin-left: -200px;
+    margin-right: -190px;
+}
+
+main, nav, aside {
+    position: relative;
+    float: left;
+}
+
+main {
+    padding: 0 20px;
+    width: 100%;
+}
+
+nav {
+    width: 195px;
+    /* padding: 0 10px; */
+    right: 250px;
+    margin-left: -100%;
+}
+
+aside {
+    width: 130px;
+    padding: 0 10px;
+    margin-right: -100%;
+}
+
+
+footer {
+    clear: both;
+}
+
+* html nav {
+    left: 150px;
+}

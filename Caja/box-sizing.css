@@ -1,0 +1,27 @@
+.caja {
+    width: 500px;
+    margin: 10px auto;
+    border: 2px solid blue;
+}
+
+#caja1 {
+    box-sizing: content-box;  /* Este es el default, no se necesita declarar*/
+    padding: 0px;             /* Sin padding el width de la caja será de 500px */
+}
+
+#caja2 {
+    box-sizing: content-box;  /* Este es el default, no se necesita declarar*/
+    padding: 20px;            /* El padding no formará parte del width */
+}                             /* Esta caja en realidad mediró 540px de ancho */
+
+#caja3 {
+    box-sizing: border-box;  /* Siempre es mejor usar border-box */
+    padding: 20px;           /* Así padding será parte del width */
+}                            /* Esta caja medirá 500px de ancho  */
+
+
+.estiloCodigo {
+    color: red;
+    font-family: monospace;
+    font-weight: 800;
+}
